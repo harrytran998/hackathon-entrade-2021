@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <Disclosure as="nav" class="bg-gray-800" v-slot="{ open }">
+  <Disclosure as="nav" class="bg-white border-red-800 border-b-2" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -22,7 +22,7 @@
             />
             <img
               class="hidden lg:block h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+              src="https://encapital.io/assets/images/logo-1-550x124.png"
               alt="Workflow"
             />
           </div>
@@ -43,12 +43,6 @@
               >
             </div>
           </div>
-        </div>
-        <div
-          class="absolute inset-y-0 right-0 flex items-center bg-yellow-200 rounded-md pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-        >
-          <p>{{ email }}</p>
-          <p>{{ name }}</p>
         </div>
       </div>
     </div>
@@ -71,6 +65,10 @@
       </div>
     </DisclosurePanel>
   </Disclosure>
+  <div class="text-center mt-4">
+    <p class="text-xl">{{ email }}</p>
+    <p class="text-xl">{{ name }}</p>
+  </div>
 </template>
 
 <script>
